@@ -343,6 +343,17 @@ nav li a{
     max-width: 100%;
 }
 
+.btn-3:hover{
+    width: 200px;
+    height: 80px;
+    border-radius: 50px;
+    border-color: #FF42A5;
+    background-color: #FF42A5;
+    color: white;
+    align-items: center;
+    margin-right: 3rem;
+    margin-bottom: 4rem;
+}
 
 /*footer*/
 
@@ -398,15 +409,6 @@ footer{
     font-size: 16px;
     font-weight: 500;
     padding-bottom: 15rem;
-}
-
-button p:hover{
-    border: #FF42A5;
-    color: #FF42A5;
-    width: 200px;
-    height: 80px;
-    border-radius: 50px;
-    
 }
 
 /*mobile*/
@@ -478,11 +480,12 @@ button p:hover{
         grid-template-columns: repeat(3,1fr);
         margin: 0px;
         justify-content: center;
+        margin-left: 25px;
     }
 
     .btn-3{
-        width: 200px;
-        height: 80px;
+        width: 100px;
+        height: 20px;
         border-radius: 50px;
         background: #FFF;
         display: flex;
@@ -490,8 +493,8 @@ button p:hover{
         align-items: center;
         margin-left: -10px;
         margin-bottom: 1rem;
-        font-size: 1px;
-        font-weight: 100;
+        font-size: 10px;
+        font-weight: 400;
         padding: 10px;
     }
 
@@ -502,22 +505,21 @@ button p:hover{
 
     .footer-list > ul,.footer-social> ul{
         display: grid;  
-        justify-content: space-around;
         grid-template-columns: repeat(3,1fr);
-        justify-content: center;
+        justify-content: space-between;
     }
 
     .footer-last > ul{
         display: grid;  
         justify-content: space-around;
         grid-template-columns: repeat(2,1fr);
-        justify-content: center;
+        justify-content: space-between;
     }
     
     .footer-list li, .footer-last li, .footer-last h3, .logo-footer h3,
     .footer-list > ul,.footer-last > ul,.footer-social> ul,.footer-social li{        
         margin: 0px;
-        padding-bottom: 20px;
+        padding-bottom: 1.5rem;
     }
 }
 
@@ -609,22 +611,20 @@ button p:hover{
 
     .footer-list > ul,.footer-social> ul{
         display: grid;  
-        justify-content: space-around;
         grid-template-columns: repeat(3,1fr);
-        justify-content: center;
+        justify-content: space-between;
     }
 
     .footer-last > ul{
         display: grid;  
-        justify-content: space-around;
         grid-template-columns: repeat(2,1fr);
-        justify-content: center;
+        justify-content: space-between;
     }
     
     .footer-list li, .footer-last li, .footer-last h3, .logo-footer h3,
     .footer-list > ul,.footer-last > ul,.footer-social> ul{        
         margin: 0px;
-        padding-bottom: 20px;
+        padding-bottom: 1.5rem;
 
     }
  }
