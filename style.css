@@ -27,20 +27,20 @@ nav{
 .logo{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin-left: 8rem;
 }
 
 .logo img{
     width: 86.041px;
     height: 40px;
+    padding-top: 50px;
 }
 
-.logo h3{
+.logo p{
     margin-left: 20px;
     color: #0B0223;
     font-size: 45px;
     font-weight: 700;
+    bottom: 100px;
 }
 
 .logo-name{
@@ -113,7 +113,10 @@ nav li a{
     text-align: left;
     font-size: 95px;
     font-weight: 800;
-    color:#F948B2, #8758F1;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     padding: 0px;
     margin: 0px;
 }
@@ -177,6 +180,10 @@ nav li a{
 }
 
 .we-are-gamer-title{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-size: 48px;
     font-weight: 700;
 }
@@ -209,6 +216,14 @@ nav li a{
     margin-bottom: 0px;
 }
 
+.only-games-title-color{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 48px;
+    font-weight: 700;
+}
 .only-games-article{
     color: #534C64;
     text-align: center;
@@ -240,6 +255,15 @@ nav li a{
 .instantly{
     display: flex;
     margin-right: 8rem;
+}
+
+.instantly-color{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 48px;
+    font-weight: 700;
 }
 .instantly-write{
     margin: 9rem 14rem 0rem 10rem;
@@ -307,6 +331,7 @@ nav li a{
     height: 80px;
     border-radius: 50px;
     background: #FFF;
+    border: #FFF;
     display: flex;
     text-align: center;
     align-items: center;
@@ -317,6 +342,7 @@ nav li a{
 .btn-3 img{
     max-width: 100%;
 }
+
 
 /*footer*/
 
@@ -374,9 +400,22 @@ footer{
     padding-bottom: 15rem;
 }
 
+button p:hover{
+    border: #FF42A5;
+    color: #FF42A5;
+    width: 200px;
+    height: 80px;
+    border-radius: 50px;
+    
+}
+
 /*mobile*/
 @media screen and (max-width: 576px){
-    nav, nav > ul, .btn,.logo,.we-are-gamer, .only-games-img-container,.instantly {
+    .logo{
+       margin-left: 0px;
+    }
+
+    nav, nav > ul, .btn,.we-are-gamer, .only-games-img-container,.instantly {
         flex-direction: column;
     }
 
@@ -397,8 +436,12 @@ footer{
     
     nav li{
         font-size: 24px;
+        
     }
 
+    .follow{
+        margin-top: 5rem;
+    }
     .title-img img,.we-are-gamer-img img,.instantly-img-small img,.instantly-img img{
         padding: 0;
         width: 100%;
@@ -447,16 +490,17 @@ footer{
         align-items: center;
         margin-left: -10px;
         margin-bottom: 1rem;
+        font-size: 1px;
+        font-weight: 100;
+        padding: 10px;
     }
 
     .btn-3 img{
         width: 20px;
         height: 20px;
-        font-size: 1px;
-        font-weight: 100;
     }
 
-    .footer-list > ul{
+    .footer-list > ul,.footer-social> ul{
         display: grid;  
         justify-content: space-around;
         grid-template-columns: repeat(3,1fr);
@@ -471,16 +515,15 @@ footer{
     }
     
     .footer-list li, .footer-last li, .footer-last h3, .logo-footer h3,
-    .footer-list > ul,.footer-last > ul{        
+    .footer-list > ul,.footer-last > ul,.footer-social> ul,.footer-social li{        
         margin: 0px;
         padding-bottom: 20px;
-
     }
 }
 
  /*tab*/
  @media screen and (min-width: 576px) and (max-width: 960px){
-    nav, nav > ul, .btn,.logo,.we-are-gamer, .only-games-img-container,.instantly {
+    nav, nav > ul, .btn,.we-are-gamer,.logo, .only-games-img-container,.instantly {
         flex-direction: column;
     }
 
@@ -491,16 +534,21 @@ footer{
     .nav, nav li a, .follow, .logo, .logo img,.title-img img,.title-container,.btn,.title,
     .title-1,.btn-2,.we-are-gamer,.we-are-gamer-title, .we-are-gamer-article,.btn-1,.we-are-gamer-2nd-last,
     .we-are-gamer-last,.we-are-gamer-container,.only-games-img-container,.only-games,.instantly,
-    .instantly-color,.instantly-title{
+    .instantly-color,.instantly-title,.footer-social> ul{
         text-align: center;    
         align-items: center;
         justify-content: center;
         margin: 0px;
+        margin-bottom: 50px;
     }
 
     
     nav li{
         font-size: 24px;
+    }
+
+    .follow{
+        margin-top: 5rem;
     }
 
     .title-img img,.we-are-gamer-img img,.instantly-img-small img,.instantly-img img{
@@ -559,7 +607,7 @@ footer{
         font-weight: 100;
     }
 
-    .footer-list > ul{
+    .footer-list > ul,.footer-social> ul{
         display: grid;  
         justify-content: space-around;
         grid-template-columns: repeat(3,1fr);
@@ -574,7 +622,7 @@ footer{
     }
     
     .footer-list li, .footer-last li, .footer-last h3, .logo-footer h3,
-    .footer-list > ul,.footer-last > ul{        
+    .footer-list > ul,.footer-last > ul,.footer-social> ul{        
         margin: 0px;
         padding-bottom: 20px;
 
